@@ -1,13 +1,20 @@
 #include <stdio.h>
-int main()
-{
-double x, y, result;
-printf("두개의 실수를 입력하시오: ");
-scanf("%lf %lf", &x, &y);
-result = x + y; 
-printf("%f / %f = %f", x, y, result);
 
-result = x / y;
-printf("%f / %f = %f", x, y, result);
-return 0;
+int main(void)
+{
+    float rate;
+    float a;
+    int b;
+
+    printf("환율을 입력하시오:");
+    scanf("%f",&rate);
+
+    printf("원화 금액을 입력하시오:");
+    scanf("%d",&b);
+
+    a=b/rate;
+
+    printf("원화 %d원은 %f달러입니다.\n",b,a);
+
+    return 0;
 }
